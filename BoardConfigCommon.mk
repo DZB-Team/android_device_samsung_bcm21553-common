@@ -39,8 +39,8 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN			:= arm-eabi-4.4.3
 TARGET_KERNEL_SOURCE				:= kernel/samsung/bcm21553-common
 
 # Recovery
-BOARD_BML_BOOT					:= "/dev/block/mmcblk0p5"
-BOARD_BML_RECOVERY				:= "/dev/block/mmcblk0p5"
+BOARD_BML_BOOT					:= "/dev/block/bml7"
+BOARD_BML_RECOVERY				:= "/dev/block/bml7"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING		:= ../../device/samsung/bcm21553-common/recovery/bcm21553_recovery_keys.c
 BOARD_FLASH_BLOCK_SIZE				:= 131072
 TARGET_USERIMAGES_USE_EXT4				:= true
@@ -48,7 +48,7 @@ BOARD_RECOVERY_HANDLES_MOUNT			:= true
 BOARD_HAS_DOWNLOAD_MODE				:= true
 TARGET_RECOVERY_PIXEL_FORMAT			:= BGRA_8888
 TARGET_NO_SEPARATE_RECOVERY			:= true
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH		:= \"/sys/class/backlight/sec-backlight/brightness\"
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH		:= \"/sys/class/backlight/aat1401-backlight/brightness\"
 
 # Charger mode
 BOARD_CHARGER_RES				:= device/samsung/bcm21553-common/prebuilt/res/charger
