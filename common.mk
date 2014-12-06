@@ -168,13 +168,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zygote.disable_gl_preload=true
 
 ## Graphics density
-ifneq (,$(filter cooperve,$(CM_BUILD)))
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=120
-endif
 
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
