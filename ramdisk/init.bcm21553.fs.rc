@@ -10,7 +10,7 @@ on early-init
     mknod /dev/hx170dec    c 0666 210 0
     mknod /dev/ttySMD0     c 0666 235 4
 
-    chown radio system /dev/bml15
+    chown radio system /dev/mmcblk0p15
     chown system graphics /dev/gememalloc
 
 on init
