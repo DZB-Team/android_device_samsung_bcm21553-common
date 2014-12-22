@@ -29,10 +29,9 @@
 
 # sensors
 /dev/akm8975_dev          0660   system     system
-/dev/bma222               0660   root       system
-/dev/ecompass_ctrl        0660   root       system
-/dev/mmc328x              0660   root       system
-/dev/proximity            0660   root       system
+/dev/hscd_i2c             0660   root       system
+/dev/alps_io              0660   root       system
+/dev/k3dh                 0660   root       system
 
 # broadcom
 /dev/bcm_alsa_pcg         0666   root       root
