@@ -36,7 +36,7 @@ MINIGZIP					:= $(shell which lzma)
 
 # Kernel source
 TARGET_KERNEL_CUSTOM_TOOLCHAIN			:= arm-eabi-4.4.3
-TARGET_KERNEL_SOURCE				:= kernel/samsung/bcm21553-common
+TARGET_KERNEL_SOURCE				:= kernel/samsung/amazing
 
 # Recovery
 TARGET_RECOVERY_FSTAB				:= device/samsung/bcm21553-common/ramdisk/fstab.bcm21553
