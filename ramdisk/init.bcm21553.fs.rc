@@ -19,11 +19,6 @@ on init
     mkdir /mnt/.lfs 0755 root root
     mkdir /efs 0771 radio system
 
-# create temp folder for nv
-    mkdir /dev/radionv
-    chown radio system /dev/radionv
-    chmod 0770 /dev/radionv
-
 on boot
 
     insmod /system/lib/modules/hx170dec.ko
