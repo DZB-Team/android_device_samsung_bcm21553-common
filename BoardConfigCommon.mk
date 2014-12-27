@@ -40,16 +40,16 @@ TARGET_KERNEL_SOURCE				:= kernel/samsung/amazing
 
 # Recovery
 TARGET_RECOVERY_FSTAB				:= device/samsung/bcm21553-common/ramdisk/fstab.bcm21553
-BOARD_BML_BOOT					:= "/dev/block/bml7"
-BOARD_BML_RECOVERY				:= "/dev/block/bml7"
+BOARD_EMMC_BOOT					:= "/dev/block/mmcblk0p5"
+BOARD_EMMC_RECOVERY				:= "/dev/block/mmcblk0p5"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING		:= ../../device/samsung/bcm21553-common/recovery/bcm21553_recovery_keys.c
 BOARD_FLASH_BLOCK_SIZE				:= 131072
-TARGET_USERIMAGES_USE_EXT4 			:= true
+TARGET_USERIMAGES_USE_EXT4			:= true
 BOARD_RECOVERY_HANDLES_MOUNT			:= true
 BOARD_HAS_DOWNLOAD_MODE				:= true
 TARGET_RECOVERY_PIXEL_FORMAT			:= BGRA_8888
 TARGET_NO_SEPARATE_RECOVERY			:= true
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH		:= \"/sys/class/backlight/sec-backlight/brightness"
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH		:= \"/sys/class/backlight/sec-backlight/brightness\"
 
 # Charger mode
 BOARD_CHARGER_RES				:= device/samsung/bcm21553-common/prebuilt/res/charger
@@ -111,6 +111,8 @@ TARGET_DOESNT_USE_FENCE_SYNC			:= true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK		:= true
 USE_OPENGL_RENDERER				:= true
 COMMON_GLOBAL_CFLAGS				+= -DEGL_NEEDS_FNW
+BOARD_NO_PAGE_FLIPPING				:= true
+
 
 # Minimal Fonts
 SMALLER_FONT_FOOTPRINT				:= true
@@ -167,3 +169,5 @@ TARGET_OTA_EXTRAS_FILE				:= device/samsung/bcm21553-common/releasetools-extras.
 # zRAM size
 BOARD_ZRAM_SIZE					:= 50331648
 
+# SELinux
+POLICYVERS					:= 24

@@ -33,6 +33,7 @@
 /dev/alps_io              0660   root       system
 /dev/k3dh                 0660   root       system
 
+#
 # broadcom
 /dev/bcm_alsa_pcg         0666   root       root
 /dev/bcm_alsa_voip        0660   radio      system
@@ -41,8 +42,12 @@
 /dev/bcm_gps              0600   gps        system
 /dev/bcm_kpdp             0600   system     system
 /dev/bcm_kril             0660   root       radio
-/dev/bcm_vsp              0660   root       root
+/dev/bcm_vsp              0666   root       root
 /dev/v3d                  0666   root       root
 
 # camera
-/dev/camera               0660   system     camera
+/dev/camera               0664   system     camera
+
+#permission for NV partition
+/dev/block/mmcblk0p15	  0770	 radio	    system
+

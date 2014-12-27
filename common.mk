@@ -173,6 +173,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.purgeable_assets=1 \
     ro.config.low_ram=true
 
 # Reduce background apps limit to 12 on low-tier devices
@@ -206,10 +207,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.ap.interface=wl0.1 \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=60
-
-# SELinux - we're not ready for enforcing mode yet
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.selinux=permissive
 
 # USB / SD card
 PRODUCT_PROPERTY_OVERRIDES += \
