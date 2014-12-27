@@ -150,7 +150,7 @@ BOARD_SEPOLICY_UNION += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     device/samsung/bcm21553-common/prebuilt/usr/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc \
-    device/samsung/bcm21553-common/prebuilt/usr/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+    device/samsung/bcm21553-common/prebuilt/usr/idc/Zinitix_tsp.idc:system/usr/idc/Zinitix_tsp.idc
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
