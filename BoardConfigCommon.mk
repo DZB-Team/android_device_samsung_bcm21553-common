@@ -118,8 +118,8 @@ BOARD_NO_PAGE_FLIPPING				:= true
 SMALLER_FONT_FOOTPRINT				:= true
 
 # USB
-TARGET_USE_CUSTOM_LUN_FILE_PATH			:= /sys/devices/lm-2/gadget/lun0/file
-BOARD_UMS_LUNFILE				:= "/sys/devices/lm-2/gadget/lun0/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH			:= /sys/devices/lm-2/gadget/lun%d/file
+BOARD_UMS_LUNFILE				:= "/sys/devices/lm-2/gadget/lun%d/file"
 
 # Wifi
 BOARD_WPA_SUPPLICANT_DRIVER			:= WEXT
